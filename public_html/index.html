@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles/reset.css"/>
+        <link rel="stylesheet" href="styles/main.css"/>
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"/>
+    </head>
+    <body>
+        <div id="wrapper">
+
+            <!-- side bar -->
+            <div id="sidebar">
+                <div class="menusubnav">
+                    <ul>
+                        <li><a href=""><i class="fa fa-search fa-3x"></i></a>
+                            <ul>
+                                <li><a href="">Transaction</a></li>
+                                <li><a href="">Securities</a></li>
+                                <li><a href="">Account</a></li>
+                            </ul>
+                        </li>
+                        <li><a href=""><i class="fa fa-bars fa-3x"></i></a></li>
+                        <li><a href=""><i class="fa fa-tasks fa-3x"></i></a>
+                            <ul>
+                                <li><a href="">Rejects</a></li>
+                                <li><a href="">Securities</a></li>
+                                <li><a href="">Account</a></li>
+                            </ul>
+                        </li>
+                        <li><a href=""><i class="fa fa-exclamation-triangle fa-3x"></i></a></li>
+                        <li><a href=""><i class="fa fa-times fa-3x"></i></a></li>
+                        <li><a href=""><i class="fa fa-times-circle fa-3x"></i></a></li>
+                        <li><a href=""><i class="fa fa-bug fa-3x"></i></a></li>
+                        <li><a href=""><i class="fa fa-check-circle-o fa-3x"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="expandedSidebar">
+                    <ul>
+                        <li><a href="">Search</a>
+                            <ul>
+                                <li><a href="">Transaction</a></li>
+                                <li><a href="">Securities</a></li>
+                                <li><a href="">Account</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Outstanding</a></li>
+                        <li><a href="">Feed Status</a>
+                            <ul>
+                                <li><a href="">Rejects</a></li>
+                                <li><a href="">Securities</a></li>
+                                <li><a href="">Account</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Exceptions</a></li>
+                        <li><a href="">Warnings</a></li>
+                        <li><a href="">Rejects</a></li>
+                        <li><a href="">Check breaks</a></li>
+                        <li><a href="">Approvals</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- content area -->
+            <div id="contentPane">
+
+                <div id="header">
+                    <div id="navigation">
+                        <ul>
+                            <li><a href="">Dashboard</a></li>
+                            <li><a href="">Alerts</a></li>
+                            <li><a href="">Domain</a></li>
+                            <li><a href="">User</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="content">
+                    <div class="hero-unit">
+                        <p>Some sample text</p>
+                    </div>
+                </div>
+
+                <div id="footer">
+                    <p>footer content</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <script>
+            /*
+             Slidemenu
+             */
+            (function() {
+                var $body = document.body
+                        , $menu_trigger = $body.getElementsByClassName('hero-unit')[0];
+
+                if (typeof $menu_trigger !== 'undefined') {
+                    $menu_trigger.addEventListener('click', function() {
+                        $body.className = ($body.className == 'menu-active') ? '' : 'menu-active';
+                    });
+                }
+
+            }).call(this);
+        </script>
+
+
+    </body>
+</html>
